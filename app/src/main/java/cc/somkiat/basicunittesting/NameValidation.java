@@ -1,18 +1,24 @@
 package cc.somkiat.basicunittesting;
 
-/**
- * Created by student on 11/10/2017 AD.
- */
+class NameValidation {
 
-class NameValidation {3.20
-
-
-    public String validate(String name){
-        return 1;
-    }
 
     public boolean isEmpty(String name) {
-        if (name.isEmpty()) {
+        if(name.equals("")){
+            return  false;
+        }
+        return true;
+    }
+
+    public boolean isLowerTwo(String name) {
+        if(name.length() < 2) {
+            return false;
+        }
+        return true;
+    }
+
+    public boolean isOverTwenty(String name) {
+        if(name.length() > 20) {
             return false;
         }
         return true;
